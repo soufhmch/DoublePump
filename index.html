@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    link
-    <script src="../DoublePump/js/script.js"></script>
+    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/Css/Style.css">
     <title>Document</title>
 </head>
 <body>
 
 <!-- Navigation Bar -->
-<div class="navbar">
+<header class="navbar">
   <a href="#home">Home</a>
-  <!-- Add more links here -->
-</div>
+  <a href="#Personages">Personages</a>
+  <a href="#Blacklist">Zwarte lijst</a>
+  <a href="#Favotieten">Favorieten</a>
+  <a href="#Contact">Contact</a>
+  <a href="#Faq">Faq</a>
+</header>
 
 <!-- Welcome Message -->
 <h1>Welcome to Our Website!</h1>
@@ -22,24 +26,87 @@
 <p>Image will go here</p>
 
 <!-- Game Blocks -->
-<div class="game-blocks">
+<section class="Fortnite">
   <!-- Each game block will look something like this -->
-  <div class="game-block">
+  <article class="game-block">
     <img src="game.jpg" alt="Game Image">
     <p>Game Name</p>
-  </div>
+  </article>
   <!-- Add more game blocks here -->
-</div>
+</section>
 
-<!-- Registration Form -->
+<section class="Fifa">
+  <!-- Each game block will look something like this -->
+  <article class="game-block">
+    <img src="game.jpg" alt="Game Image">
+    <p>Game Name</p>
+  </article>
+  <!-- Add more game blocks here -->
+</section>
+
+<section class="LOTR">
+  <!-- Each game block will look something like this -->
+  <article class="game-block">
+    <img src="game.jpg" alt="Game Image">
+    <p>Game Name</p>
+  </article>
+  <!-- Add more game blocks here -->
+</section>
+
+<section class="LegoMaster">
+  <!-- Each game block will look something like this -->
+  <article class="game-block">
+    <img src="game.jpg" alt="Game Image">
+    <p>Game Name</p>
+  </article>
+  <!-- Add more game blocks here -->
+</section>
+
+<section class="Pokemon">
+  <!-- Each game block will look something like this -->
+  <article class="game-block">
+    <img src="game.jpg" alt="Game Image">
+    <p>Game Name</p>
+  </article>
+  <!-- Add more game blocks here -->
+</section>
+
+<section class="MTG">
+  <!-- Each game block will look something like this -->
+  <article class="game-block">
+    <img src="game.jpg" alt="Game Image">
+    <p>Game Name</p>
+  </article>
+  <!-- Add more game blocks here -->
+</section>
+
+<h2>Registration Form</h2>
+
 <form action="/submit_registration" method="post">
-  <!-- Add form fields here -->
-  <input type="submit" value="Register">
+  <div class="container">
+    <label for="fname"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" required>
+
+    <label for="lname"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
 </form>
 
 <!-- Footer -->
 <div class="footer">
-  <p>© 2024 My Website</p>
+  <p>© 2024 AP hogeschool</p>
   <!-- Social Media Links -->
   <a href="https://www.facebook.com/mywebsite">Facebook</a>
   <a href="https://twitter.com/mywebsite">Twitter</a>
