@@ -27,7 +27,7 @@ body {
   }
   
   button {
-    background-color: #4CAF50;
+    background-color: #ac5aff;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -39,22 +39,26 @@ body {
   
   button:hover {
     opacity:1;
+    color: #cc06cd;
   }
   
   .signin {
-    background-color: #f1f1f1;
+    background-color: #f2f2f2;
     text-align: center;
     padding: 10px;
     margin-top: 10px;
   }
   .navbar {
-    background-color: #333;
+    background-color: #ac5aff;
   }
-  
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
   .navbar nav {
     display: flex;
     justify-content: space-around;
-    padding: 14px 16px;
+    padding: 1rem 0 1rem 0;
   }
   
   .navbar a {
@@ -66,8 +70,9 @@ body {
   }
   
   .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #6f93ff;
+    color: #cc06cd;
+    border-radius: 25px;
   }
   
   .navbar a.active {
