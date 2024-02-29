@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .faq-column {
+            flex-basis: 50%;
+            padding: 0 20px;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer; /* Toegevoegd om de cursor te veranderen naar een handje wanneer erop wordt geklikt */
+            position: relative; /* Toegevoegd om de positie van het pijl-pictogram te bepalen */
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        .arrow-down {
+            position: absolute; /* De pijl wordt relatief gepositioneerd aan de .faq-item */
+            right: 10px; /* Afstand vanaf de rechterkant van de .faq-item */
+            top: 50%; /* Verticaal gecentreerd */
+            transform: translateY(-50%); /* Om de pijl verticaal te centreren */
+        }
+        .answer {
+            display: none; /* Antwoorden zijn standaard verborgen */
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-column">
+        <span class="faq-item" onclick="toggleAnswer(this)">
+            <span class="question">Wat is Lorem Ipsum?</span>
+            <span class="arrow-down">&#9660;</span> <!-- Unicode-pijl naar beneden toegevoegd -->
+            <span class="answer">Lorem Ipsum is simpelweg een dummytekst van de druk- en zetindustrie.</span>
+        </span>
+
+        <span class="faq-item" onclick="toggleAnswer(this)">
+            <span class="question">Waarom gebruiken we het?</span>
+            <span class="arrow-down">&#9660;</span> <!-- Unicode-pijl naar beneden toegevoegd -->
+            <span class="answer">Het is een lang gevestigd feit dat een lezer zal worden afgeleid door de leesbare inhoud van een pagina bij het bekijken van de lay-out ervan.</span>
+        </span>
+
+        <span class="faq-item" onclick="toggleAnswer(this)">
+            <span class="question">Waar komt het vandaan?</span>
+            <span class="arrow-down">&#9660;</span> <!-- Unicode-pijl naar beneden toegevoegd -->
+            <span class="answer">In tegenstelling tot wat algemeen aangenomen wordt, is Lorem Ipsum niet zomaar willekeurige tekst.</span>
+        </span>
+
+        <!-- Voeg meer FAQ-items hier toe -->
+    </div>
+
+    <div class="faq-column">
+        <span class="faq-item" onclick="toggleAnswer(this)">
+            <span class="question">Wat is de betekenis van Ipsum?</span>
+            <span class="arrow-down">&#9660;</span> <!-- Unicode-pijl naar beneden toegevoegd -->
+            <span class="answer">Het woord 'Ipsum' komt uit het Latijn en betekent 'het zelf' of 'zelfs'.</span>
+        </span>
+
+        <span class="faq-item" onclick="toggleAnswer(this)">
+            <span class="question">Hoe lang bestaat Lorem Ipsum?</span>
+            <span class="arrow-down">&#9660;</span> <!-- Unicode-pijl naar beneden toegevoegd -->
+            <span class="answer">Lorem Ipsum is al sinds de 16e eeuw in gebruik als standaard proeftekst.</span>
+        </span>
+
+        <!-- Voeg meer FAQ-items hier toe -->
+    </div>
+
+    <script>
+        function toggleAnswer(question) {
+            var answer = question.querySelector('.answer'); // Zoek het antwoord binnen de vraag
+            if (answer.style.display === "none") {
+                answer.style.display = "block"; // Toon het antwoord als het verborgen is
+            } else {
+                answer.style.display = "none"; // Verberg het antwoord als het getoond wordt
