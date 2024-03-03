@@ -7,7 +7,15 @@
   <script src="/js/script.js"></script>
   <link rel="stylesheet" href="/Css/reset.css">
   <link rel="stylesheet" href="/Css/Index.css">
+  <link rel="stylesheet" href="Css/contact.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+  <script defer src="js/map.js"></script>
   <title>Document</title>
 </head>
 
@@ -23,22 +31,14 @@
             <a href=""><i class='bx bxs-heart' ></i> Favorieten</a>
             <a href=""><i class='bx bxs-x-circle' ></i> Zwarte lijst</a>
             <a href="contact.html"><i class='bx bxs-contact' ></i> Contact</a>
-            <a href="FAQ.html"><i class='bx bx-question-mark' ></i>Faq</a>
+            <a href="FAQ.html"><i class='bx bx-question-mark' ></i>FAQ</a>
         </ul>
     </nav>
 </header>
     <h1>Contacteer Ons</h1>
+    <div id="map"></div>
+    
     <section>
-        <h2>Info</h2>
-        <p>Info details...</p>
-      </section>
-      
-      <section>
-        <h2>Info</h2>
-        <p>Info details...</p>
-      </section>
-      
-      <section>
         <h2>Info</h2>
         <p>Info details...</p>
       </section>
@@ -51,6 +51,8 @@
         <input type="text" id="email" name="email"><br>
         <input type="submit" value="Verzenden">
       </form>
+
+    
       
       <footer class="footer">
         <p>© 2024 AP hogeschool</p>
