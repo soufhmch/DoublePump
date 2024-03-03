@@ -71,7 +71,14 @@ button:hover {
   margin-top: 10px;
 }
 
+
 /* Style the navbar header */
+nav {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
 .navbar {
 background-color: #ac5aff; /* Set background color */
 padding: 10px 20px; /* Add padding to the header */
@@ -167,4 +174,16 @@ margin-bottom: 2rem;
 /* Add some spacing between the heading and paragraph */
 .welcome-title + .welcome-text {
 margin-top: 2rem;
+}
+
+footer {
+  background-color: #ac5aff;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.socials{
+  font-size: 25px;
 }

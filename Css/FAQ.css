@@ -1,51 +1,56 @@
 body {
     font-family: Arial, sans-serif;
-  }
+}
 
 .faq-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    grid-template-rows: auto auto; /* 2 rows */
-    gap: 20px; /* Add gap between items */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    grid-template-rows: auto auto;
+    /* 2 rows */
+    gap: 20px;
+    /* Add gap between items */
     margin-top: 2rem;
-  }
-  
-  .faq-item {
+}
+
+.faq-item {
     cursor: pointer;
     background-color: #f9f9f9;
     border-radius: 5px;
     padding: 15px;
     transition: background-color 0.3s ease;
-    box-shadow: 0 4px 16px #ac5aff; /* Add shadow for depth */
-    
-  }
-  
-  .faq-item:hover {
+    box-shadow: 0 4px 16px #ac5aff;
+    /* Add shadow for depth */
+}
+
+.faq-item:hover {
     background-color: #e6e6e6;
-  }
-  
-  .question {
+}
+
+.question {
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
-  }
-  
-  .arrow-down {
+}
+
+.arrow-down {
     float: right;
     font-size: 18px;
     color: #666;
-  }
-  
-  .answer {
-    display: none; /* Hide answer by default */
+}
+
+.answer {
+    display: none;
+    /* Hide answer by default */
     color: #666;
     line-height: 1.5;
-  }
-  
-  .faq-item.active .answer {
-    display: block; /* Show answer when faq-item is active */
-  }
-  
+}
+
+.faq-item.active .answer {
+    display: block;
+    /* Show answer when faq-item is active */
+}
+
 
 /* 
 BUTTON IN DE FOOTER
@@ -79,9 +84,13 @@ BUTTON IN DE FOOTER
     /* Change background color on hover */
 }
 
-/* 
-NAVBAR
-*/
+
+/* NAVBAR*/
+nav {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
 /* Style the navbar header */
 .navbar {
     background-color: #ac5aff;
@@ -131,3 +140,14 @@ NAVBAR
     width: 250px;
     border-radius: 25px;
 }
+footer {
+    background-color: #ac5aff;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .socials{
+    font-size: 25px;
+  }
