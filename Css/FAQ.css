@@ -4,7 +4,7 @@ body {
 
 .faq-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     /* 4 columns */
     grid-template-rows: auto auto;
     /* 2 rows */
@@ -129,7 +129,7 @@ nav {
     border-radius: 4rem;
     background-color: #6f93ff;
     /* Set background color on hover */
-    color: #09d2e1;
+    color: hotpink;
     /* Set text color on hover */
     transform: translateY(-3px);
     /* Move the link up by 3px on hover */
