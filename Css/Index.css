@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
 }
+
 .container {
   width: 300px;
   padding: 16px;
@@ -11,7 +12,8 @@ body {
   border-radius: 4px;
 }
 
-input[type=text], input[type=password] {
+input[type=text],
+input[type=password] {
   width: 90%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -20,7 +22,8 @@ input[type=text], input[type=password] {
   background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus,
+input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -37,16 +40,21 @@ button {
 }
 
 button:hover {
-  opacity:1;
+  opacity: 1;
   color: #cc06cd;
 }
 
 #myBtn {
-  display: none; /* Initially hide the button */
-  position: fixed; /* Fixed position ensures it stays in the same place on the screen */
-  bottom: 20px; /* Adjust as per your preference */
-  right: 30px; /* Adjust as per your preference */
-  z-index: 99; /* Ensure it appears above other content */
+  display: none;
+  /* Initially hide the button */
+  position: fixed;
+  /* Fixed position ensures it stays in the same place on the screen */
+  bottom: 20px;
+  /* Adjust as per your preference */
+  right: 30px;
+  /* Adjust as per your preference */
+  z-index: 99;
+  /* Ensure it appears above other content */
   background-color: #ac5aff;
   color: white;
   border: none;
@@ -61,7 +69,8 @@ button:hover {
 }
 
 #myBtn:hover {
-  background-color: #6f93ff; /* Change background color on hover */
+  background-color: #6f93ff;
+  /* Change background color on hover */
 }
 
 .signin {
@@ -80,110 +89,124 @@ nav {
 }
 
 .navbar {
-background-color: #ac5aff; /* Set background color */
-padding: 10px 20px; /* Add padding to the header */
-border-radius: 25px;
+  background-color: #ac5aff;
+  /* Set background color */
+  padding: 10px 20px;
+  /* Add padding to the header */
+  border-radius: 25px;
 }
 
 /* Style the navigation links */
 .navbar nav a {
-color: white; /* Set default text color */
-text-decoration: none; /* Remove underline */
-margin-right: 25px; /* Add spacing between links */
-transition: all 0.3s ease; /* Add transition effect for smooth hover */
-font-size: 20px;
+  color: white;
+  /* Set default text color */
+  text-decoration: none;
+  /* Remove underline */
+  margin-right: 25px;
+  /* Add spacing between links */
+  transition: all 0.3s ease;
+  /* Add transition effect for smooth hover */
+  font-size: 20px;
 }
 
 /* Style the logo */
 .navbar nav .logo {
-height: 100px; /* Set logo height */
-vertical-align: middle; /* Align logo vertically */
-margin-right: 20px; /* Add spacing between logo and links */
-border-radius: 25px;
+  height: 100px;
+  /* Set logo height */
+  vertical-align: middle;
+  /* Align logo vertically */
+  margin-right: 20px;
+  /* Add spacing between logo and links */
+  border-radius: 25px;
 }
 
 /* Hover effect for navigation links */
 .navbar nav a:hover {
-border-radius: 4rem;
-background-color: #6f93ff; /* Set background color on hover */
-color: #09d2e1; /* Set text color on hover */
-transform: translateY(-3px); /* Move the link up by 3px on hover */
-padding: 5px;
+  border-radius: 4rem;
+  background-color: #6f93ff;
+  /* Set background color on hover */
+  color: #09d2e1;
+  /* Set text color on hover */
+  transform: translateY(-3px);
+  /* Move the link up by 3px on hover */
+  padding: 5px;
 }
-#gameLogo{
-width: 250px;
-border-radius: 25px;
+
+#gameLogo {
+  width: 250px;
+  border-radius: 25px;
 }
+
 .games {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2, 1fr);
-align-items: center;
-row-gap: 1rem;
-gap: 3rem;
-margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  row-gap: 1rem;
+  gap: 3rem;
+  margin-bottom: 2rem;
 }
 
 .games article {
-padding: 3rem 0 0 35%;
-position: relative;
-background-color: #f9f9f9;
-border-radius: 10px;
-box-shadow: 0 4px 8px #ac5aff;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-height: 200px;
+  padding: 3rem 0 0 35%;
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #ac5aff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 200px;
 }
 
 .games article:hover {
-transform: translateY(-5px);
-box-shadow: 0 8px 16px #ac5aff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px #ac5aff;
 }
 
 /* Add some decorative elements */
 .games article::before {
-content: '';
-position: absolute;
-top: 0;
-left: -10px;
-height: 100%;
-width: 5px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px;
+  height: 100%;
+  width: 5px;
 
-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
 }
 
 /* Example: Add hover effect on border color */
 .games article:hover {
-border-color: #ac5aff;
+  border-color: #ac5aff;
 }
 
 .welcome-title {
-color: #ac5aff;
-font-size: 36px;
-text-align: center;
-margin-bottom: 10px;
+  color: #ac5aff;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .welcome-text {
-color: #333;
-font-size: 18px;
-line-height: 1.5;
-text-align: center;
-margin-bottom: 2rem;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 /* Add some spacing between the heading and paragraph */
-.welcome-title + .welcome-text {
-margin-top: 2rem;
+.welcome-title+.welcome-text {
+  margin-top: 2rem;
 }
 
 footer {
   background-color: #ac5aff;
   color: #fff;
   text-align: center;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
-.socials{
+
+.socials {
   font-size: 25px;
 }

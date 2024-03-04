@@ -91,6 +91,7 @@ nav {
     padding: 10px;
     text-align: center;
 }
+
 /* Style the navbar header */
 .navbar {
     background-color: #ac5aff;
@@ -140,14 +141,15 @@ nav {
     width: 250px;
     border-radius: 25px;
 }
+
 footer {
     background-color: #ac5aff;
     color: #fff;
     text-align: center;
-    position: fixed;
     bottom: 0;
     width: 100%;
-  }
-  .socials{
+}
+
+.socials {
     font-size: 25px;
-  }
+}

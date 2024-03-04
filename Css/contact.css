@@ -1,6 +1,6 @@
-
-#map { height: 250px;
-   }
+#map {
+    height: 250px;
+}
 
 /* Contactformulier sectie */
 #contact-form {
@@ -16,14 +16,15 @@ form {
     max-width: 400px;
     margin: 0 auto;
 }
+
 footer {
     background-color: #ac5aff;
     color: #fff;
     text-align: center;
-    position: fixed;
     bottom: 0;
     width: 100%;
-  }
-  .socials{
+}
+
+.socials {
     font-size: 25px;
-  }
+}
