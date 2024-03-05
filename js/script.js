@@ -62,3 +62,32 @@ function addToBlacklist() {
     // Implement functionality to add the selected character to blacklist
     console.log('Adding', selectedCharacter.name, 'to blacklist...');
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Get all game blocks
+  const gameBlocks = document.querySelectorAll('.game');
+
+  // Get the pop-up and close button
+  const popup = document.getElementById('popup');
+  const closeBtn = document.querySelector('.close-btn');
+
+  // Loop through each game block
+  gameBlocks.forEach((block) => {
+    // Add click event listener to each game block
+    block.addEventListener('click', () => {
+      // Check if the game block is not Fortnite
+      if (block.id !== 'fortnite') {
+        // Show the pop-up
+        popup.style.display = 'block';
+      }
+    });
+  });
+
+  // Add click event listener to the close button
+  closeBtn.addEventListener('click', () => {
+    // Hide the pop-up when close button is clicked
+    popup.style.display = 'none';
+  });
+});

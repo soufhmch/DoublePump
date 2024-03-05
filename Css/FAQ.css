@@ -1,6 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-}
+    background-image: url('/Assets/neon-grid-background_53876-91657.jpg');
+      background-size: cover; /* Cover the entire background */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Prevent the image from repeating */
+  }
 
 .faq-grid {
     display: grid;
@@ -94,7 +98,7 @@ nav {
 
 /* Style the navbar header */
 .navbar {
-    background-color: #ac5aff;
+    background-color: rgba(172, 90, 255, 0.5); /* Set background color with 50% opacity */
     /* Set background color */
     padding: 10px 20px;
     /* Add padding to the header */
@@ -143,13 +147,50 @@ nav {
 }
 
 footer {
-    background-color: #ac5aff;
+    background-color: rgba(172, 90, 255, 0.5); /* Set background color with 50% opacity */
     color: #fff;
     text-align: center;
     bottom: 0;
     width: 100%;
-}
-
-.socials {
+    padding-top: 1rem;
+    margin-bottom: -2rem;
+    margin-top: 2rem;
+    border-radius: 25px;
+  }
+  
+  .socials {
     font-size: 25px;
-}
+    margin-left: -2.5rem;
+    padding-bottom: 1rem;
+  }
+  footer a{
+    text-decoration: none;
+    color: white;
+  }
+  .footer-link {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 18px;
+  }
+  
+  .footer-link:hover {
+    background-color: #6f93ff;
+    /* Set background color on hover */
+    color: #09d2e1;
+    /* Set text color on hover */
+    border-radius: 4rem;
+    padding: 5px;
+  }
+  
+  .social-link {
+    text-decoration: none;
+    color: #09d2e1;
+    font-size: 25px;
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .social-link:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+  }

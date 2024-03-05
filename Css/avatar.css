@@ -2,23 +2,63 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('/Assets/neon-grid-background_53876-91657.jpg');
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
+/* Style the navbar header */
 nav {
     color: #fff;
     padding: 10px;
     text-align: center;
-}
-
-footer {
-    background-color: #ac5aff;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+  }
+  
+  .navbar {
+    background-color: rgba(172, 90, 255, 0.5); /* Set background color with 50% opacity */
+    /* Set background color */
+    padding: 10px 20px;
+    /* Add padding to the header */
+    border-radius: 25px;
+  }
+  
+  /* Style the navigation links */
+  .navbar nav a {
+    color: white;
+    /* Set default text color */
+    text-decoration: none;
+    /* Remove underline */
+    margin-right: 25px;
+    /* Add spacing between links */
+    transition: all 0.3s ease;
+    /* Add transition effect for smooth hover */
+    font-size: 20px;
+    
+  }
+  
+  /* Style the logo */
+  .navbar nav .logo {
+    height: 100px;
+    /* Set logo height */
+    vertical-align: middle;
+    /* Align logo vertically */
+    margin-right: 20px;
+    /* Add spacing between logo and links */
+    border-radius: 25px;
+  }
+  
+  /* Hover effect for navigation links */
+  .navbar nav a:hover {
+    border-radius: 4rem;
+    background-color: #6f93ff;
+    /* Set background color on hover */
+    color: #09d2e1;
+    /* Set text color on hover */
+    transform: translateY(-3px);
+    /* Move the link up by 3px on hover */
+    padding: 5px;
+  }
 
 .container {
     display: flex;
@@ -106,65 +146,58 @@ footer {
     color: #fff;
 }
 
-
-/* Style the navbar header */
-.navbar {
-    background-color: #ac5aff;
-    /* Set background color */
-    padding: 10px 20px;
-    /* Add padding to the header */
-    border-radius: 25px;
-}
-
-/* Style the navigation links */
-.navbar nav a {
-    color: white;
-    /* Set default text color */
-    text-decoration: none;
-    /* Remove underline */
-    margin-right: 25px;
-    /* Add spacing between links */
-    transition: all 0.3s ease;
-    /* Add transition effect for smooth hover */
-    font-size: 20px;
-}
-
-/* Style the logo */
-.navbar nav .logo {
-    height: 100px;
-    /* Set logo height */
-    vertical-align: middle;
-    /* Align logo vertically */
-    margin-right: 20px;
-    /* Add spacing between logo and links */
-    border-radius: 25px;
-}
-
-/* Hover effect for navigation links */
-.navbar nav a:hover {
-    border-radius: 4rem;
-    background-color: #6f93ff;
-    /* Set background color on hover */
-    color: #09d2e1;
-    /* Set text color on hover */
-    transform: translateY(-3px);
-    /* Move the link up by 3px on hover */
-    padding: 5px;
-}
-
 #gameLogo {
     width: 250px;
     border-radius: 25px;
 }
 
+/*FOOTER*/
 footer {
-    background-color: #ac5aff;
+    background-color: rgba(172, 90, 255, 0.5); /* Set background color with 50% opacity */
     color: #fff;
     text-align: center;
     bottom: 0;
     width: 100%;
-}
-
-.socials {
+    padding-top: 1rem;
+    margin-bottom: -2rem;
+    margin-top: 2rem;
+    border-radius: 25px;
+  }
+  
+  .socials {
     font-size: 25px;
-}
+    margin-left: -2.5rem;
+    padding-bottom: 1rem;
+  }
+  footer a{
+    text-decoration: none;
+    color: white;
+  }
+  .footer-link {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 18px;
+  }
+  
+  .footer-link:hover {
+    background-color: #6f93ff;
+    /* Set background color on hover */
+    color: #09d2e1;
+    /* Set text color on hover */
+    border-radius: 4rem;
+    padding: 5px;
+  }
+  
+  .social-link {
+    text-decoration: none;
+    color: #09d2e1;
+    font-size: 25px;
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .social-link:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+  }
+  
