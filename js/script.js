@@ -65,6 +65,8 @@ function addToBlacklist() {
 
 
 
+
+//POP UP
 document.addEventListener('DOMContentLoaded', function () {
   // Get all game blocks
   const gameBlocks = document.querySelectorAll('.game');
